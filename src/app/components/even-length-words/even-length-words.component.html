@@ -1,0 +1,8 @@
+<p class="text-danger">{{ word }}</p>
+@if (evenWords.length == 0) {
+    <p>No even length words</p>
+} @else {
+    @for (word of evenWords; track word) {
+        <div>{{ word }}</div>
+    }
+}
